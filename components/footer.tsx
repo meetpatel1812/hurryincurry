@@ -51,7 +51,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <Link href="#" className="text-gray-600 hover:text-red-600">
-                <span className="sr-only">Twitter</span>
+{/*                 <span className="sr-only">Twitter</span> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
