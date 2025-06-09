@@ -86,7 +86,7 @@ export default async function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="h-48 relative">
-                <Image src="https://github.com/user-attachments/assets/c8f8b8a5-8b5a-4c8a-9c8e-2d3f4e5f6a7b" alt="Non Veg Curry Dishes" fill className="object-cover" />
+                <Image src="https://www.lekhafoods.com/media/1051127/chepala-pulusu.jpg" alt="Non Veg Curry Dishes" fill className="object-cover" />
 
               </div>
               <div className="p-6">
