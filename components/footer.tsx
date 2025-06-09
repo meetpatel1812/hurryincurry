@@ -121,7 +121,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200">
           <p className="text-sm text-center text-gray-600">
-            &copy; {new Date().getFullYear()} Curry in Hurry. All rights reserved.
+            &copy; {new Date().getFullYear()} Curry in Hurry. All rights reserved. Created by Elite Graphics.
           </p>
         </div>
       </div>
