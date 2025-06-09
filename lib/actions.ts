@@ -88,6 +88,23 @@ export async function getCategories() {
   return data
 }
 
+export async function getCategoryByName(name: string) {
+  const supabase = createClient()
+
+  const { data, error } = await supabase
+    .from("categories")
+    .select("*")
+    .eq("name", name)
+    .single()
+
+  if (error) {
+    console.error("Error fetching category by name:", error)
+    return null
+  }
+
+  return data
+}
+
 export async function getMenuItems(categoryId?: string) {
   const supabase = createClient()
 

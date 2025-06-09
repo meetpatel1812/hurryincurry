@@ -1,8 +1,9 @@
 -- Insert categories
 INSERT INTO categories (name, description) VALUES
 ('Appetizers', 'Start your meal with these delicious starters'),
-('Main Courses', 'Hearty and flavorful main dishes'),
-('Breads', 'Traditional Indian breads'),
+('NonVeg Specials', 'Rich, aromatic curries and non-vegetarian specialties'),
+('Tandoori Breads', 'Traditional breads and tandoori specialties from our clay oven'),
+('Vegetable Delight', 'Flavorful vegetarian dishes showcasing the diversity of Indian cuisine'),
 ('Rice Dishes', 'Aromatic rice specialties'),
 ('Desserts', 'Sweet treats to end your meal');
 
@@ -32,49 +33,124 @@ SELECT
 WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Chicken Tikka');
 
 INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
-SELECT 
-  'Butter Chicken', 
-  'Tender chicken cooked in a rich, creamy tomato sauce', 
-  16.99, 
-  FALSE, 
-  FALSE, 
-  TRUE, 
-  (SELECT id FROM categories WHERE name = 'Main Courses'),
+SELECT
+  'Butter Chicken',
+  'Tender chicken cooked in a rich, creamy tomato sauce',
+  16.99,
+  FALSE,
+  FALSE,
+  TRUE,
+  (SELECT id FROM categories WHERE name = 'NonVeg Specials'),
   '/placeholder.svg?height=300&width=400'
 WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Butter Chicken');
 
 INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
-SELECT 
-  'Paneer Tikka Masala', 
-  'Cottage cheese cubes in a spiced tomato gravy', 
-  14.99, 
-  TRUE, 
-  TRUE, 
-  FALSE, 
-  (SELECT id FROM categories WHERE name = 'Main Courses'),
+SELECT
+  'Paneer Tikka Masala',
+  'Cottage cheese cubes in a spiced tomato gravy',
+  14.99,
+  TRUE,
+  TRUE,
+  FALSE,
+  (SELECT id FROM categories WHERE name = 'Vegetable Delight'),
   '/placeholder.svg?height=300&width=400'
 WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Paneer Tikka Masala');
 
 INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
-SELECT 
-  'Naan', 
-  'Traditional leavened bread baked in tandoor', 
-  2.99, 
-  TRUE, 
-  FALSE, 
-  FALSE, 
-  (SELECT id FROM categories WHERE name = 'Breads'),
+SELECT
+  'Naan',
+  'Traditional leavened bread baked in tandoor',
+  2.99,
+  TRUE,
+  FALSE,
+  FALSE,
+  (SELECT id FROM categories WHERE name = 'Tandoori Breads'),
   '/placeholder.svg?height=300&width=400'
 WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Naan');
 
+-- Add more NonVeg Specials items
 INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
-SELECT 
-  'Biryani', 
-  'Fragrant basmati rice cooked with spices and your choice of protein', 
-  17.99, 
-  FALSE, 
-  TRUE, 
-  TRUE, 
+SELECT
+  'Chicken Curry',
+  'Traditional chicken curry with aromatic spices and herbs',
+  15.99,
+  FALSE,
+  TRUE,
+  FALSE,
+  (SELECT id FROM categories WHERE name = 'NonVeg Specials'),
+  '/placeholder.svg?height=300&width=400'
+WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Chicken Curry');
+
+INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
+SELECT
+  'Lamb Vindaloo',
+  'Spicy lamb curry with potatoes in a tangy sauce',
+  18.99,
+  FALSE,
+  TRUE,
+  FALSE,
+  (SELECT id FROM categories WHERE name = 'NonVeg Specials'),
+  '/placeholder.svg?height=300&width=400'
+WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Lamb Vindaloo');
+
+-- Add more Tandoori Breads items
+INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
+SELECT
+  'Garlic Naan',
+  'Soft naan bread topped with fresh garlic and herbs',
+  3.99,
+  TRUE,
+  FALSE,
+  FALSE,
+  (SELECT id FROM categories WHERE name = 'Tandoori Breads'),
+  '/placeholder.svg?height=300&width=400'
+WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Garlic Naan');
+
+INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
+SELECT
+  'Tandoori Chicken',
+  'Marinated chicken cooked in traditional tandoor oven',
+  16.99,
+  FALSE,
+  TRUE,
+  TRUE,
+  (SELECT id FROM categories WHERE name = 'Tandoori Breads'),
+  '/placeholder.svg?height=300&width=400'
+WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Tandoori Chicken');
+
+-- Add more Vegetable Delight items
+INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
+SELECT
+  'Dal Makhani',
+  'Creamy black lentils slow-cooked with butter and spices',
+  12.99,
+  TRUE,
+  FALSE,
+  TRUE,
+  (SELECT id FROM categories WHERE name = 'Vegetable Delight'),
+  '/placeholder.svg?height=300&width=400'
+WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Dal Makhani');
+
+INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
+SELECT
+  'Aloo Gobi',
+  'Cauliflower and potatoes cooked with turmeric and spices',
+  11.99,
+  TRUE,
+  FALSE,
+  FALSE,
+  (SELECT id FROM categories WHERE name = 'Vegetable Delight'),
+  '/placeholder.svg?height=300&width=400'
+WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Aloo Gobi');
+
+INSERT INTO menu_items (name, description, price, is_vegetarian, is_spicy, is_featured, category_id, image_url)
+SELECT
+  'Biryani',
+  'Fragrant basmati rice cooked with spices and your choice of protein',
+  17.99,
+  FALSE,
+  TRUE,
+  TRUE,
   (SELECT id FROM categories WHERE name = 'Rice Dishes'),
   '/placeholder.svg?height=300&width=400'
 WHERE NOT EXISTS (SELECT 1 FROM menu_items WHERE name = 'Biryani');

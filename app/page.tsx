@@ -94,7 +94,7 @@ export default async function Home() {
                 <p className="text-gray-600 mb-4">
                   Rich, aromatic curries made with a blend of traditional Indian spices and fresh ingredients.
                 </p>
-                <Link href="/menu" className="text-red-600 hover:text-red-700 font-medium">
+                <Link href="/menu?category=NonVeg Specials" className="text-red-600 hover:text-red-700 font-medium">
                   Explore Curries →
                 </Link>
               </div>
@@ -114,7 +114,7 @@ export default async function Home() {
                 <p className="text-gray-600 mb-4">
                   Marinated meats and vegetables cooked to perfection in our traditional tandoor oven.
                 </p>
-                <Link href="/menu" className="text-red-600 hover:text-red-700 font-medium">
+                <Link href="/menu?category=Tandoori Breads" className="text-red-600 hover:text-red-700 font-medium">
                   Discover Tandoori →
                 </Link>
               </div>
@@ -134,7 +134,7 @@ export default async function Home() {
                 <p className="text-gray-600 mb-4">
                   A wide variety of flavorful vegetarian dishes that showcase the diversity of Indian cuisine.
                 </p>
-                <Link href="/menu" className="text-red-600 hover:text-red-700 font-medium">
+                <Link href="/menu?category=Vegetable Delight" className="text-red-600 hover:text-red-700 font-medium">
                   View Vegetarian Menu →
                 </Link>
               </div>
