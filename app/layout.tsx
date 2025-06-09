@@ -9,9 +9,9 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Curry and Hurry - Authentic Indian Restaurant",
+  title: "Curry in Hurry - Authentic Indian Restaurant",
   description:
-    "Authentic Indian cuisine in Edmonton, Alberta. Experience the rich flavors of India at Curry and Hurry.",
+    "Authentic Indian cuisine in Sherwood Park, Alberta. Experience the rich flavors of India at Curry in Hurry.",
     generator: 'v0.dev'
 }
 

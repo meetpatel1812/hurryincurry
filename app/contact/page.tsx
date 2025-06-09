@@ -31,7 +31,7 @@ export default async function ContactPage() {
                   <MapPin className="h-5 w-5 text-red-600 mt-1 mr-3" />
                   <div>
                     <h3 className="font-medium">Address</h3>
-                    <p className="text-gray-600">123 Main Street, Edmonton, Alberta</p>
+                    <p className="text-gray-600">Unit 150, 661 wye road sherwood park alberta</p>
                   </div>
                 </div>
 
@@ -67,13 +67,13 @@ export default async function ContactPage() {
             <h2 className="text-2xl font-bold mb-6 text-red-600">Location</h2>
             <div className="bg-white rounded-lg shadow-md overflow-hidden h-80 relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18888.894193099893!2d-113.5087!3d53.5444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0224580deff23%3A0x411fa00c4af6155d!2sEdmonton%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sus!4v1621555555555!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.123456789!2d-113.3123!3d53.5123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDMwJzQ0LjMiTiAxMTPCsDE4JzQ0LjMiVw!5e0!3m2!1sen!2sus!4v1621555555555!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                aria-label="Google Maps showing our location"
+                aria-label="Google Maps showing our location in Sherwood Park"
               ></iframe>
             </div>
           </div>

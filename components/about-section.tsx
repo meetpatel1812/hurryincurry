@@ -5,10 +5,10 @@ export default function AboutSection() {
     <section className="container">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="text-3xl font-bold mb-6">About Curry and Hurry</h2>
+          <h2 className="text-3xl font-bold mb-6">About Curry in Hurry</h2>
           <div className="space-y-4">
             <p>
-              Welcome to Curry and Hurry, where we bring the authentic flavors of India to Edmonton. Our restaurant is
+              Welcome to Curry in Hurry, where we bring the authentic flavors of India to Sherwood Park. Our restaurant is
               dedicated to serving traditional Indian cuisine made with fresh ingredients and aromatic spices.
             </p>
             <p>
@@ -17,7 +17,7 @@ export default function AboutSection() {
               the rich, creamy dishes of the north, we offer a diverse menu that caters to all tastes.
             </p>
             <p>
-              At Curry and Hurry, we believe that good food brings people together. Whether you're dining in, taking
+              At Curry in Hurry, we believe that good food brings people together. Whether you're dining in, taking
               out, or ordering delivery, we're committed to providing you with an exceptional culinary experience.
             </p>
           </div>

@@ -22,7 +22,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold text-red-600">Curry In Hurry</span>
+          <span className="text-xl font-bold text-red-600">Curry in Hurry</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">

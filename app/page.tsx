@@ -22,7 +22,7 @@ export default async function Home() {
         <div className="container relative z-20 py-24 md:py-32 flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Authentics Indian Cuisine</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            Experience the rich flavors of India at Curry In Hurry, Edmonton's premier Indian restaurant
+            Experience the rich flavors of India at Curry in Hurry, Sherwood Park's premier Indian restaurant
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white">
@@ -45,9 +45,9 @@ export default async function Home() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-red-600">About Curry and Hurry</h2>
+              <h2 className="text-3xl font-bold mb-6 text-red-600">About Curry in Hurry</h2>
               <p className="text-gray-700 mb-6">
-                Welcome to Curry and Hurry, where we bring the authentic flavors of India to Edmonton. Our restaurant
+                Welcome to Curry in Hurry, where we bring the authentic flavors of India to Sherwood Park. Our restaurant
                 offers a delightful culinary journey through the diverse regions of India, featuring traditional recipes
                 prepared with the finest ingredients and aromatic spices.
               </p>
@@ -63,7 +63,7 @@ export default async function Home() {
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden">
               <Image
                 src="https://i.imgur.com/Wx5H5ph.png?height=600&width=800"
-                alt="Curry and Hurry Restaurant"
+                alt="Curry in Hurry Restaurant"
                 fill
                 className="object-cover"
               />
@@ -210,7 +210,7 @@ export default async function Home() {
             <h2 className="text-3xl font-bold mb-4 text-red-600">What Our Customers Say</h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
               Don't just take our word for it. Here's what our customers have to say about their dining experience at
-              Curry and Hurry.
+              Curry in Hurry.
             </p>
           </div>
 
@@ -250,7 +250,7 @@ export default async function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Experience Authentic Indian Flavors</h2>
             <p className="mb-8">
-              Visit us in Edmonton to enjoy our delicious Indian cuisine in a warm and welcoming atmosphere.
+              Visit us in Sherwood Park to enjoy our delicious Indian cuisine in a warm and welcoming atmosphere.
             </p>
             <Button asChild size="lg" className="bg-white text-red-600 hover:bg-red-100">
               <Link href="/contact">Find Us</Link>
