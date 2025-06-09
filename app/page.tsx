@@ -110,7 +110,7 @@ export default async function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Tandoori Specialties</h3>
+                <h3 className="text-xl font-semibold mb-2">Tandoori Specialties (Breads)</h3>
                 <p className="text-gray-600 mb-4">
                   Marinated meats and vegetables cooked to perfection in our traditional tandoor oven.
                 </p>
