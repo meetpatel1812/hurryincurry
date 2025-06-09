@@ -40,31 +40,31 @@ export function MenuCategory({ category, items }: MenuCategoryProps) {
       </div>
 
       <div className="space-y-8">
-        {items.map((item) => (
-          <div key={item.id} className="flex flex-col md:flex-row gap-6">
+        {items.map((item, index) => (
+          <div key={item.id} className="flex flex-col md:flex-row gap-6 hover-lift animate-fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
             {item.image_url && (
               <div className="relative h-40 w-full md:w-48 md:h-32 rounded-md overflow-hidden">
-                <Image src={item.image_url || "/placeholder.svg"} alt={item.name} fill className="object-cover" />
+                <Image src={item.image_url || "/placeholder.svg"} alt={item.name} fill className="object-cover transition-transform duration-300 hover:scale-110" />
               </div>
             )}
             <div className="flex-1">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="text-xl font-medium">{item.name}</h3>
+                  <h3 className="text-xl font-medium text-gray-800">{item.name}</h3>
                   <div className="flex gap-2 mt-1">
                     {item.is_vegetarian && (
-                      <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
+                      <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200 transition-colors duration-200 hover:bg-green-100">
                         Vegetarian
                       </Badge>
                     )}
                     {item.is_spicy && (
-                      <Badge variant="outline" className="bg-red-50 text-red-700 border-red-200">
+                      <Badge variant="outline" className="bg-red-50 text-red-700 border-red-200 transition-colors duration-200 hover:bg-red-100">
                         Spicy
                       </Badge>
                     )}
                   </div>
                 </div>
-                <span className="font-medium text-red-600">${item.price.toFixed(2)}</span>
+                <span className="font-medium text-red-600 text-lg">${item.price.toFixed(2)}</span>
               </div>
               <p className="text-muted-foreground mt-2">{item.description}</p>
             </div>

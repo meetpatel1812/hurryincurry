@@ -75,7 +75,7 @@ export default async function Home() {
       {/* What We Serve Section */}
       <section className="py-16 md:py-24 bg-green-50">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-3xl font-bold mb-4 text-red-600">What We Serve</h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
               Explore our wide range of authentic Indian dishes, from flavorful curries to tandoori specialties, all
@@ -84,65 +84,65 @@ export default async function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 relative">
-                <Image src="https://github.com/user-attachments/assets/c8f8b8a5-8b5a-4c8a-9c8e-2d3f4e5f6a7b" alt="Non Veg Curry Dishes" fill className="object-cover" />
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover-lift animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+              <div className="h-48 relative overflow-hidden">
+                <Image src="https://github.com/user-attachments/assets/c8f8b8a5-8b5a-4c8a-9c8e-2d3f4e5f6a7b" alt="Non Veg Curry Dishes" fill className="object-cover transition-transform duration-300 hover:scale-110" />
 
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Non Veg Curries</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Non Veg Curries</h3>
                 <p className="text-gray-600 mb-4">
                   Succulent meat and seafood curries slow-cooked in rich, aromatic gravies with authentic Indian spices and herbs.
                 </p>
-                <Link href="/menu?category=NonVeg Specials" className="text-red-600 hover:text-red-700 font-medium">
+                <Link href="/menu?category=NonVeg Specials" className="text-red-600 hover:text-red-700 font-medium transition-colors duration-200 hover:underline">
                   Explore Curries →
                 </Link>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 relative">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover-lift animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+              <div className="h-48 relative overflow-hidden">
                 <Image
                   src="https://mrsbalbirsingh.com/cdn/shop/articles/Mrs_Balbir_Singh_s_Traditional_Naan_Recipe.png?height=400&width=600"
                   alt="Tandoori Specialties"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Tandoori Specialties</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Tandoori Specialties</h3>
                 <p className="text-gray-600 mb-4">
                   Marinated meats and vegetables cooked to perfection in our traditional tandoor oven.
                 </p>
-                <Link href="/menu?category=Tandoori Breads" className="text-red-600 hover:text-red-700 font-medium">
+                <Link href="/menu?category=Tandoori Breads" className="text-red-600 hover:text-red-700 font-medium transition-colors duration-200 hover:underline">
                   Discover Tandoori →
                 </Link>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 relative">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover-lift animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+              <div className="h-48 relative overflow-hidden">
                 <Image
                   src="https://www.sailusfood.com/wp-content/uploads/2013/09/paneer-tawa-masala.jpg?height=400&width=600"
                   alt="Vegetarian Delights"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Vegetarian Delights</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Vegetarian Delights</h3>
                 <p className="text-gray-600 mb-4">
                   A wide variety of flavorful vegetarian dishes that showcase the diversity of Indian cuisine.
                 </p>
-                <Link href="/menu?category=Vegetable Delight" className="text-red-600 hover:text-red-700 font-medium">
+                <Link href="/menu?category=Vegetable Delight" className="text-red-600 hover:text-red-700 font-medium transition-colors duration-200 hover:underline">
                   View Vegetarian Menu →
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className="mt-12 text-center">
-            <Button asChild className="bg-red-600 hover:bg-red-700">
+          <div className="mt-12 text-center animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+            <Button asChild className="bg-red-600 hover:bg-red-700 transition-all duration-200 hover:shadow-lg hover:scale-105">
               <Link href="/menu">View Full Menu</Link>
             </Button>
           </div>
@@ -152,7 +152,7 @@ export default async function Home() {
       {/* Featured Menu Items */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-3xl font-bold mb-4 text-red-600">Featured Dishes</h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
               Try our most popular dishes, carefully selected to give you the best dining experience.
@@ -160,33 +160,33 @@ export default async function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredItems.map((item) => (
-              <Card key={item.id} className="overflow-hidden">
-                <div className="h-48 relative">
+            {featuredItems.map((item, index) => (
+              <Card key={item.id} className="overflow-hidden hover-lift animate-scale-in" style={{animationDelay: `${0.1 + index * 0.1}s`}}>
+                <div className="h-48 relative overflow-hidden">
                   <Image
                     src={item.image_url || "/placeholder.svg?height=300&width=400"}
                     alt={item.name}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 hover:scale-110"
                   />
                   {item.is_vegetarian && (
-                    <div className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
+                    <div className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full animate-fade-in-left" style={{animationDelay: `${0.3 + index * 0.1}s`}}>
                       Veg
                     </div>
                   )}
                   {item.is_spicy && (
-                    <div className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+                    <div className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-fade-in-right" style={{animationDelay: `${0.3 + index * 0.1}s`}}>
                       Spicy
                     </div>
                   )}
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="font-semibold mb-1">{item.name}</h3>
+                  <h3 className="font-semibold mb-1 text-gray-800">{item.name}</h3>
                   <p className="text-sm text-gray-500 mb-2">{item.categories?.name}</p>
                   <p className="text-sm text-gray-600 mb-3 line-clamp-2">{item.description}</p>
                   <div className="flex justify-between items-center">
                     <span className="font-bold text-red-600">${item.price.toFixed(2)}</span>
-                    <Button asChild size="sm" className="bg-green-600 hover:bg-green-700">
+                    <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 transition-all duration-200 hover:shadow-md">
                       <Link href="/menu">View Details</Link>
                     </Button>
                   </div>
@@ -195,8 +195,8 @@ export default async function Home() {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
-            <Button asChild variant="outline" className="border-red-600 text-red-600 hover:bg-red-50">
+          <div className="mt-12 text-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+            <Button asChild variant="outline" className="border-red-600 text-red-600 hover:bg-red-50 transition-all duration-200 hover:shadow-lg hover:scale-105">
               <Link href="/menu">See All Menu Items</Link>
             </Button>
           </div>
