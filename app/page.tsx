@@ -86,13 +86,13 @@ export default async function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="h-48 relative">
-                <Image src="https://i.imgur.com/FDWAD8j.jpeg?height=400&width=600" alt="Curry Dishes" fill className="object-cover" />
-                
+                <Image src="https://github.com/user-attachments/assets/c8f8b8a5-8b5a-4c8a-9c8e-2d3f4e5f6a7b" alt="Non Veg Curry Dishes" fill className="object-cover" />
+
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Flavorful Curries</h3>
+                <h3 className="text-xl font-semibold mb-2">Non Veg Curries</h3>
                 <p className="text-gray-600 mb-4">
-                  Rich, aromatic curries made with a blend of traditional Indian spices and fresh ingredients.
+                  Succulent meat and seafood curries slow-cooked in rich, aromatic gravies with authentic Indian spices and herbs.
                 </p>
                 <Link href="/menu?category=NonVeg Specials" className="text-red-600 hover:text-red-700 font-medium">
                   Explore Curries →
