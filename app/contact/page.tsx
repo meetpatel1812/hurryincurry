@@ -39,7 +39,7 @@ export default async function ContactPage() {
                   <Phone className="h-5 w-5 text-red-600 mt-1 mr-3" />
                   <div>
                     <h3 className="font-medium">Phone</h3>
-                    <p className="text-gray-600">(365)-883-3836 / (365)-883-4305</p>
+                    <p className="text-gray-600">+1 (780) 709-7164</p>
                   </div>
                 </div>
 
@@ -47,7 +47,7 @@ export default async function ContactPage() {
                   <Mail className="h-5 w-5 text-red-600 mt-1 mr-3" />
                   <div>
                     <h3 className="font-medium">Email</h3>
-                    <p className="text-gray-600">elitegraphics2811@gmail.com</p>
+                    <p className="text-gray-600">Curryinhurry07@gmail.com</p>
                   </div>
                 </div>
 
