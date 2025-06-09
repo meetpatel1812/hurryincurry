@@ -20,7 +20,7 @@ export default async function Home() {
           style={{ backgroundImage: "url('https://t4.ftcdn.net/jpg/04/57/27/57/360_F_457275775_zKthn4tQlf9e9EgRSEDCLeXmlp3ayDyi.jpg?height=800&width=1600')" }}
         ></div>
         <div className="container relative z-20 py-24 md:py-32 flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Authenti Indian Cuisine</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Authentics Indian Cuisine</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl">
             Experience the rich flavors of India at Curry In Hurry, Edmonton's premier Indian restaurant
           </p>
