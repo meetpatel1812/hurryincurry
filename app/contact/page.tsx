@@ -67,7 +67,7 @@ export default async function ContactPage() {
             <h2 className="text-2xl font-bold mb-6 text-red-600">Location</h2>
             <div className="bg-white rounded-lg shadow-md overflow-hidden h-80 relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.123456789!2d-113.3123!3d53.5123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDMwJzQ0LjMiTiAxMTPCsDE4JzQ0LjMiVw!5e0!3m2!1sen!2sus!4v1621555555555!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.597671450755!2d-113.27853172340177!3d53.511382072337625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a016568f880047%3A0x30052dd5c8dec5cf!2s661%20Wye%20Rd%20%23150%2C%20Sherwood%20Park%2C%20AB%20T8A%206E8!5e0!3m2!1sen!2sca!4v1749501650465!5m2!1sen!2sca"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
