@@ -9,9 +9,9 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <h3 className="text-lg font-bold text-red-600 mb-4">Curry and Hurry</h3>
+            <h3 className="text-lg font-bold text-red-600 mb-4">Curry in Hurry</h3>
             <p className="text-sm text-gray-600 mb-4">
-              Authentic Indian cuisine in Edmonton, Alberta. Experience the rich flavors of India.
+              Authentic Indian cuisine in Sherwood Park, Alberta. Experience the rich flavors of India.
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-gray-600 hover:text-red-600">
@@ -97,7 +97,7 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li>Edmonton, Alberta</li>
+              <li>Unit 150, 661 wye road sherwood park alberta</li>
               <li>(365)-883-3836 / (365)-883-4305</li>
               <li>elitegraphics2811@gmail.com</li>
               <li>
@@ -121,7 +121,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200">
           <p className="text-sm text-center text-gray-600">
-            &copy; {new Date().getFullYear()} Curry and Hurry. All rights reserved.
+            &copy; {new Date().getFullYear()} Curry in Hurry. All rights reserved.
           </p>
         </div>
       </div>

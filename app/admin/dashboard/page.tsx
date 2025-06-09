@@ -44,7 +44,7 @@ export default function AdminDashboardPage() {
         <div className="container">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-3xl font-bold">Curry and Hurry Admin</h1>
+              <h1 className="text-3xl font-bold">Curry in Hurry Admin</h1>
               <p>Manage your restaurant's content</p>
             </div>
             <Button variant="outline" onClick={handleSignOut} className="bg-white text-orange-600 hover:bg-orange-100">

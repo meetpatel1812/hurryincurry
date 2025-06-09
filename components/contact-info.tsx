@@ -10,7 +10,7 @@ export function ContactInfo() {
           <MapPin className="h-5 w-5 text-red-600 mt-1" />
           <div>
             <h3 className="font-medium">Address</h3>
-            <address className="not-italic text-muted-foreground">Edmonton, Alberta</address>
+            <address className="not-italic text-muted-foreground">Unit 150, 661 wye road sherwood park alberta</address>
           </div>
         </div>
 

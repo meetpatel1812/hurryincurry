@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="max-w-xl space-y-5">
             <h1 className="text-4xl md:text-6xl font-bold text-white">Authentic Indian Flavors in Every Bite</h1>
             <p className="text-xl text-white/90">
-              Experience the rich and diverse tastes of India at Curry and Hurry, Edmonton's premier Indian restaurant.
+              Experience the rich and diverse tastes of India at Curry in Hurry, Sherwood Park's premier Indian restaurant.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700">
