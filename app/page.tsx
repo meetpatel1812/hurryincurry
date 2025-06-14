@@ -5,6 +5,25 @@ import { Card, CardContent } from "@/components/ui/card"
 import { getFeaturedItems, getFeaturedReviews } from "@/lib/actions"
 import NewsletterSignup from "@/components/newsletter-signup"
 
+// new code
+import Script from 'next/script'
+
+export default function HomePage() {
+  return (
+    <>
+      <Script
+        src="https://cdn.popupsmart.com/bundle.js"
+        data-id="966262"
+        strategy="afterInteractive"
+      />
+      {/* Your actual page content */}
+      <div>Welcome to our site!</div>
+    </>
+  )
+}
+
+// new code done 
+
 export default async function Home() {
   const featuredItems = await getFeaturedItems()
   const featuredReviews = await getFeaturedReviews()
