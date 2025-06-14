@@ -35,7 +35,15 @@ export function MenuCategory({ category, items }: MenuCategoryProps) {
         )}
         <div>
           <h2 className="text-2xl font-bold text-red-600">{category.name}</h2>
-          {category.description && <p className="text-muted-foreground">{category.description}</p>}
+{/*           {category.description && <p className="text-muted-foreground">{category.description}</p>} */}
+          {category.name === "Meat & Sea Food" ? (
+  <>
+    <p className="text-muted-foreground">xyz</p>
+    <p className="text-muted-foreground">abc</p>
+  </>
+) : (
+  category.description && <p className="text-muted-foreground">{category.description}</p>
+)}
         </div>
       </div>
 
