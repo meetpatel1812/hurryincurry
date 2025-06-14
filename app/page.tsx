@@ -14,9 +14,8 @@ export default async function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-red-600 text-white">
-{/*         Meet update */}
+{/*         Meet update Remove below line for changes */}
 
-            {/*         new code */}
         <script src="https://cdn.popupsmart.com/bundle.js" data-id="966262" async defer></script>
 
 
