@@ -28,8 +28,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col">
             <Navbar />
             <main className="flex-1">{children}</main>
-            {/*         new code */}
-        <script src="https://cdn.popupsmart.com/bundle.js" data-id="966262" async defer></script>
+
             <Footer />
           </div>
         </ThemeProvider>
