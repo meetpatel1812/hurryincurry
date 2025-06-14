@@ -38,8 +38,16 @@ export function MenuCategory({ category, items }: MenuCategoryProps) {
 {/*           {category.description && <p className="text-muted-foreground">{category.description}</p>} */}
           {category.name === "Meat & Sea Food" ? (
   <>
-    <p className="text-muted-foreground">xyz</p>
-    <p className="text-muted-foreground">abc</p>
+    <p className="text-muted-foreground"><strong>Choose your Own Curry</strong></p>
+    <p className="text-muted-foreground"><strong>Curry</strong> - An Onion & Tomato base flavoured gravy with herb & spices.</p>
+  <p className="text-muted-foreground"><strong>Saagwala</strong> - Addition of fresh spinach & cream makes the dish healthier & tastier.</p>
+  <p className="text-muted-foreground"><strong>Kadai</strong> - Thick delicious gravy cooked with sautéed onions, bell peppers & tomatoes.</p>
+  <p className="text-muted-foreground"><strong>Roganjosh</strong> - A spicy thin curry cooked with cracked whole spices.</p>
+  <p className="text-muted-foreground"><strong>Vondaloo</strong> - South Indian curry with touch of tamarind & topped with shredded coconut.</p>
+  <p className="text-muted-foreground"><strong>Bhuna</strong> - Meat cooked in our thick gravy with onions & roasted tomatoes.</p>
+  <p className="text-muted-foreground"><strong>Masala</strong> - Creamy thick sauce cooked with herbs & spices.</p>
+  <p className="text-muted-foreground"><strong>Lababdaar</strong> - A Mughlai style dish made with onion & tomato creamy sauce.</p>
+  <p className="text-muted-foreground"><strong>Korma</strong> - Spicy sauce made of yogurt & cream.</p>
   </>
 ) : (
   category.description && <p className="text-muted-foreground">{category.description}</p>
