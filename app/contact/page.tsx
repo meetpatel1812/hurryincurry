@@ -39,7 +39,7 @@ export default async function ContactPage() {
                   <Phone className="h-5 w-5 text-red-600 mt-1 mr-3" />
                   <div>
                     <h3 className="font-medium">Phone</h3>
-                    <p className="text-gray-600">+1 (780) 709-7164</p>
+                    <p className="text-gray-600">+1 (587) 713-0024</p>
                   </div>
                 </div>
 
