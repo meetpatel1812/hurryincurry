@@ -98,7 +98,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>Unit 150, 661 wye road sherwood park alberta</li>
-              <li>+1 (780) 709-7164</li>
+              <li>+1 (587) 713-0024</li>
               <li>Curryinhurry07@gmail.com</li>
               <li>
                 <Link href="/contact" className="text-red-600 hover:text-red-700">
