@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
 {/*           <span className="text-xl font-bold text-red-600">Curry in Hurry</span> */}
-          <img src="/logo.png" alt="Curry in Hurry Logo" className="h-8 w-auto" />
+          <img src="https://i.imgur.com/978t69N.png" alt="Curry in Hurry Logo" className="h-8 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
