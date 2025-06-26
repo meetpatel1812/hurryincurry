@@ -38,16 +38,16 @@ export function MenuCategory({ category, items }: MenuCategoryProps) {
 {/*           {category.description && <p className="text-muted-foreground">{category.description}</p>} */}
           {category.name === "Meat & Sea Food" ? (
   <>
-    <p className="text-muted-foreground"><strong>Choose your Own Curry</strong></p>
-    <p className="text-muted-foreground"><strong>1. Curry</strong> - An Onion & Tomato base flavoured gravy with herb & spices.</p>
-  <p className="text-muted-foreground"><strong>2. Saagwala</strong> - Addition of fresh spinach & cream makes the dish healthier & tastier.</p>
-  <p className="text-muted-foreground"><strong>3. Kadai</strong> - Thick delicious gravy cooked with sautéed onions, bell peppers & tomatoes.</p>
-  <p className="text-muted-foreground"><strong>4. Roganjosh</strong> - A spicy thin curry cooked with cracked whole spices.</p>
-  <p className="text-muted-foreground"><strong>5. Vondaloo</strong> - South Indian curry with touch of tamarind & topped with shredded coconut.</p>
-  <p className="text-muted-foreground"><strong>6. Bhuna</strong> - Meat cooked in our thick gravy with onions & roasted tomatoes.</p>
-  <p className="text-muted-foreground"><strong>7. Masala</strong> - Creamy thick sauce cooked with herbs & spices.</p>
-  <p className="text-muted-foreground"><strong>8. Lababdaar</strong> - A Mughlai style dish made with onion & tomato creamy sauce.</p>
-  <p className="text-muted-foreground"><strong>9. Korma</strong> - Spicy sauce made of yogurt & cream.</p>
+    <p className="text-white"><strong>Choose your Own Curry</strong></p>
+    <p className="text-white"><strong>1. Curry</strong> - An Onion & Tomato base flavoured gravy with herb & spices.</p>
+  <p className="text-white"><strong>2. Saagwala</strong> - Addition of fresh spinach & cream makes the dish healthier & tastier.</p>
+  <p className="text-white"><strong>3. Kadai</strong> - Thick delicious gravy cooked with sautéed onions, bell peppers & tomatoes.</p>
+  <p className="text-white"><strong>4. Roganjosh</strong> - A spicy thin curry cooked with cracked whole spices.</p>
+  <p className="text-white"><strong>5. Vondaloo</strong> - South Indian curry with touch of tamarind & topped with shredded coconut.</p>
+  <p className="text-white"><strong>6. Bhuna</strong> - Meat cooked in our thick gravy with onions & roasted tomatoes.</p>
+  <p className="text-white"><strong>7. Masala</strong> - Creamy thick sauce cooked with herbs & spices.</p>
+  <p className="text-white"><strong>8. Lababdaar</strong> - A Mughlai style dish made with onion & tomato creamy sauce.</p>
+  <p className="text-white"><strong>9. Korma</strong> - Spicy sauce made of yogurt & cream.</p>
   </>
 ) : (
   category.description && <p className="text-white">{category.description}</p>
