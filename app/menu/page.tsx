@@ -22,7 +22,8 @@ if (searchParams.category) {
 }
 
 return (
-<div className="min-h-screen bg-green-50">
+// <div className="min-h-screen bg-green-50">
+<div className="min-h-screen bg-black">
 <div className="bg-red-600 text-white py-16">
 <div className="container">
 <MenuHeader />
