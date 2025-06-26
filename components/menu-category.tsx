@@ -33,7 +33,7 @@ export function MenuCategory({ category, items }: MenuCategoryProps) {
             <Image src={category.image_url || "/placeholder.svg"} alt={category.name} fill className="object-cover" />
           </div>
         )}
-        <div className="text-white/85">
+        <div>
           <h2 className="text-2xl font-bold text-red-600">{category.name}</h2>
 {/*           {category.description && <p className="text-muted-foreground">{category.description}</p>} */}
           {category.name === "Meat & Sea Food" ? (
@@ -50,12 +50,12 @@ export function MenuCategory({ category, items }: MenuCategoryProps) {
   <p className="text-muted-foreground"><strong>9. Korma</strong> - Spicy sauce made of yogurt & cream.</p>
   </>
 ) : (
-  category.description && <p className="text-muted-foreground">{category.description}</p>
+  category.description && <p className="text-white">{category.description}</p>
 )}
         </div>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-8 text-white">
         {items.map((item) => (
           <div key={item.id} className="flex flex-col md:flex-row gap-6">
             {item.image_url && (
