@@ -32,7 +32,7 @@ return (
 
 <div className="container py-12">
 <Tabs defaultValue={defaultCategoryId} className="w-full">
-<TabsList className="mb-8 flex flex-wrap h-auto bg-transparent border-b border-gray-200 pb-2 gap-2">
+<TabsList className="mb-8 flex flex-wrap h-auto bg-transparent border-b border-gray-200 pb-2 gap-2 text-white">
 {categories.map((category) => (
 <TabsTrigger
 key={category.id}
