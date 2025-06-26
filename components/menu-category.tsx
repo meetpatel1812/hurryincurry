@@ -29,7 +29,7 @@ export function MenuCategory({ category, items }: MenuCategoryProps) {
     <div className="text-white">
       <div className="flex items-center gap-4 mb-6">
         {category.image_url && (
-          <div className="relative h-16 w-16 rounded-full overflow-hidden">
+          <div className="relative h-16 w-16 rounded-full overflow-hidden text-white">
             <Image src={category.image_url || "/placeholder.svg"} alt={category.name} fill className="object-cover" />
           </div>
         )}
