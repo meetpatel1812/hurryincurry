@@ -33,7 +33,7 @@ export function MenuCategory({ category, items }: MenuCategoryProps) {
             <Image src={category.image_url || "/placeholder.svg"} alt={category.name} fill className="object-cover" />
           </div>
         )}
-        <div>
+        <div className="text-white/85">
           <h2 className="text-2xl font-bold text-red-600">{category.name}</h2>
 {/*           {category.description && <p className="text-muted-foreground">{category.description}</p>} */}
           {category.name === "Meat & Sea Food" ? (
