@@ -26,7 +26,7 @@ interface MenuCategoryProps {
 
 export function MenuCategory({ category, items }: MenuCategoryProps) {
   return (
-    <div>
+    <div className="text-white">
       <div className="flex items-center gap-4 mb-6">
         {category.image_url && (
           <div className="relative h-16 w-16 rounded-full overflow-hidden">
