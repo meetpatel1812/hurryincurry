@@ -16,7 +16,7 @@ export default async function Home() {
       <section className="relative bg-red-600 text-white">
 {/*         Meet update Remove below line for changes */}
 
-        <script src="https://cdn.popupsmart.com/bundle.js" data-id="966262" async defer></script>
+{/*         <script src="https://cdn.popupsmart.com/bundle.js" data-id="966262" async defer></script> */}
 
 
 {/* old code */}
